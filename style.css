@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+.tbContainer{
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+table{
+    border-collapse: collapse;
+}
+
+
+tbody {
+    
+     /* Set a maximum height for vertical scrolling */
+  }
+th,td{
+    min-width: 80px;
+    border: 1px solid black;
+}
+td{
+    outline: none;
+}
+.TopContainerForInfo{
+    padding: 30px 5px;
+    background-color: rgb(109, 217, 109);
+    position: sticky;
+    top: 0;
+}
+.functionalities{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+button{
+    width: fit-content;
+    padding: 5px;
+    font-style: italic;
+    border-radius: 2px;
+    border: 0.5px solid black;
+    
+}
+.underline{
+    text-decoration: underline;
+}

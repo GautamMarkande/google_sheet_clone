@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Google Sheet Clone</title>
+</head>
+
+<body>
+    <div class="TopContainerForInfo">
+        <h1 id="CurrCell">No Cell</h1>
+        <div class="functionalities">
+            <button class="bold" id="bold">B</button>
+            <button class="itelic" id="itelic">I</button>
+            <button class="underline" id="underline">U</button>
+            <button class="left" id="left">Left</button>
+            <button id="right">Right</button>
+            <button id="center">Center</button>
+            <select id="fonte-style-dropdown">
+                <option value="serif">Serif</option>
+                <option value="sans-serif">Sans Serif</option>
+                <option value="monospace">Monospace</option>
+                <option value="cursive">Cursive</option>
+            </select>
+            <select id="fonte-size-dropdown">
+                <option value="10px">10</option>
+                <option value="12px">12</option>
+                <option value="14px">14</option>
+                <option value="16px">16</option>
+                <option value="18px">18</option>
+            </select>
+            <div class="table-top-cont">
+                <label for="bgColor">bg color</label>
+                <input type="color" id="bgColor" />
+
+                <label for="fontColor">font color</label>
+                <input type="color" id="fontColor" />
+
+                <button id="cut-btn">Cut</button>
+                <button id="copy-btn">Copy</button>
+                <button id="paste-btn">Paste</button>
+                <button id="validate">validate</button>
+
+                <button onclick="dowloadMatrix()">Download</button>
+                <input id="upload-input" type="file" accept=".json" />
+                <i class="fa-solid fa-bell"></i>
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512">!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.<path d="M224 0c-17.7 0-32 14.3-32 32V51.2C119 66 64 130.6 64 208v18.8c0 47-17.3 92.4-48.5 127.6l-7.4 8.3c-8.4 9.4-10.4 22.9-5.3 34.4S19.4 416 32 416H416c12.6 0 24-7.4 29.2-18.9s3.1-25-5.3-34.4l-7.4-8.3C401.3 319.2 384 273.9 384 226.8V208c0-77.4-55-142-128-156.8V32c0-17.7-14.3-32-32-32zm45.3 493.3c12-12 18.7-28.3 18.7-45.3H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7z"/></svg> -->
+            </div>
+        </div>
+    </div>
+    <div class="tbContainer">
+        <table>
+            <thead>
+                <tr id="table_head_row">
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="TableBody">
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
